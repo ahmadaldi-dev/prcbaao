@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!--Di head kita bisa menambahkan tag meta, title, script, style, link, dll-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;2,700,1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gambar/reset.css" />
+    <script src="vscode/scrips.js" defer></script>
+    <link rel="stylesheet" href="gambar/style.css" />
+  </head>
+  <body class="body">
+    <hr class="hrd"/>
+    <header>
+      <div class="site-header">
+        <img
+          class="site-logo"
+          src="gambar/logo.jpg"
+          alt="Logo Mobile Legends"
+        />
+        <div class="title">Bos Nyak</div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <hr class="hrd" />
+    <div class="container">
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img class="img1" src="gambar/kalea.png" alt="hero" />
+          <figure>
+            <h1>BENEDETTA</h1><hr class="hrg"><br><br>
+            <div><img class="type1" src="gambar/fighter.png" alt="type"> <img class="type2" src="gambar/asasin.png" alt="type"><p id="a">ASSASSIN | FIGHTER</p></div>
+            
+            <button class="skil-btn" onclick="tampil('keteranganrole')">
+              <img class="ikon1" src="gambar/role.jpg" alt="role" /></button
+            ><br />
+
+            <div class="skil-btn" onclick="tampil('keteranganpasif')">
+              <img
+                class="ikon2"
+                src="gambar/pasif.png"
+                alt="skil pasif"
+            /></div>
+            <br />
+
+            <button class="skil-btn" onclick="tampil('keteranganskil01')">
+              <img class="ikon3" src="gambar/skil1.png" alt="skil" /></button
+            ><br />
+
+            <button class="skil-btn" onclick="tampil('keteranganskil02')">
+              <img class="ikon4" src="gambar/skil2.png" alt="skil" /></button
+            ><br />
+
+            <button class="skil-btn" onclick="tampil('keteranganskil03')">
+              <img class="ikon5" src="gambar/ulti.png" alt="skil" /></button
+            ><br />
+
+            <div id="keteranganrole" class="ket-skil hidden">
+              <h2><span class="m">EXP</span> Lane<hr class="hrt"></h2>
+            <p><span class="m">EXP</span> Lane adalah koridor (lane) yang memiliki tanda ikon <span class="m">"E"</span> di map <span class="u"> Mobile Legends.</span> Di lane ini, <span class="o"> minion memberikan tambahan EXP (Experience)</span> lebih banyak, 
+            sehingga hero yang menempatinya bisa naik level (terutama mencapai Level 4) lebih cepat dibanding lane lain. Role ini umumnya diisi oleh <span class="m">hero tipe Fighter atau Tank </span>yang memiliki ketahanan tinggi.</p>
+            </div>
+            
+
+            <div id="keteranganpasif" class="ket-skil hidden">
+              <h2>Elapset Daytime <span class="o">[Mobility] </span><span class="m"> [Damage]</span><br><hr class="hrt"> </h2>
+              <p> 
+                Tahan tombol <span class="u">Serangan Dasar</span> untuk memasuki kondisi Swordout dan
+                mengisi Sword Intent. Setelah terisi penuh, lepaskan untuk
+                melakukan Swordout Slash ke arah yang dihadapinya dan melesat ke
+                depan, memberikan <span class="o">(+215% Total Serangan Fisik)</span> <span class="m">Kerusakan Fisik</span>
+                kepada musuh di jalurnya (dihitung sebagai kerusakan serangan
+                dasar dan dikurangi menjadi 50% terhadap minion dan creep).
+                Benedetta hanya dapat menggunakan Swordout Slash ketika Sword
+                Intent-nya penuh dan dia berada dalam kondisi Swordout.
+                Benedetta juga mendapatkan Sword Intent dengan memberikan
+                kerusakan menggunakan Serangan Dasar dan skill-nya.
+              </p>
+            </div>
+
+            <div id="keteranganskil01" class="ket-skil hidden">
+              <h2>Phantom slash<span class="u"> [AOE]</span><span class="o"> [Mobility]</span><br><hr class="hrt"></h2>
+              <p>
+                Benedetta mundur dengan cepat dan meninggalkan bayangan di
+                depannya. Setelah jeda singkat, bayangannya menebas ke depan
+                dalam area berbentuk kipas, memberikan 200 <span class="o">(+75% Total Physical
+                Attack)</span> <span class="m">Physical Damage</span> dan menyebabkan efek slow kepada musuh
+                sebesar 60% selama 0,5 detik. Sementara itu, Benedetta melesat
+                ke depan untuk menebas, memberikan 75 <span class="o">(+100% Total Physical
+                Attack)</span><span class="m"> Physical Damage.</span> (Jika target terkena hit dari
+                bayangannya, damage yang diberikan oleh Benedetta sendiri akan
+                meningkat menjadi 200%.)
+              </p>
+            </div>
+
+            <div id="keteranganskil02" class="ket-skil hidden">
+              <h2>An Eye For An Eye <span class="o">[Mobility] </span><span class="u">[Buff]</span><br><hr class="hrt"></h2>
+              <p>
+                Benedetta mengangkat senjatanya untuk bertahan, memperoleh
+                Control Immunity (kekebalan terhadap efek crowd control) dan
+                memblokir damage dari sumber mana pun selama 0,8 detik. Setelah
+                itu, dia menusuk ke arah yang ditentukan, memberikan 300 <span class="o">(+80%
+                Total Physical Attack)</span><span class="m"> Physical Damage.</span> Jika Benedetta berhasil
+                menahan damage apa pun saat bertahan, dia akan memperoleh Sword
+                Intent penuh. Jika dia menahan efek crowd control apa pun,
+                tusukan berikutnya akan memberikan efek stun kepada target
+                selama 1,5 detik.
+              </p>
+            </div>
+
+            <div id="keteranganskil03" class="ket-skil hidden">
+              <h2>Alecto: Final Blow <span class="m">[Burst]</span> <span class="o">[Mobility]</span><br><hr class="hrt"></h2>
+              <p>
+                Benedetta menggenggam Alecto, melesat ke depan (Benedetta tidak
+                dapat ditargetkan selama melesat), dan melakukan tebasan setelah
+                jeda singkat, meledakkan Sword Intent di sepanjang jalur
+                tersebut. Selama 2,5 detik, Sword Intent memberikan total hingga
+                1560 <span class="o">(+1105% Extra Physical Attack)</span><span class="m"> Physical Damage</span> kepada musuh
+                di dalamnya dan memperlambat mereka sebesar 50%.
+              </p>
+            </div></div>
+        
+              </div>
+            </div>
+          </div>
+         </figure>
+      </div>
+    </div>
+  </body>
+</html>
